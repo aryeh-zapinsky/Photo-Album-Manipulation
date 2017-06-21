@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/Users/aryehzapinsky/Documents/Programming/Photo_Album_Manipulation/env/bin/python3
 
 """
 Created on Sunday June 18 2017
@@ -26,7 +26,7 @@ def sorter (filepath):
             continue
 
         for fi in files:
-            if ".DS_Store" in fi:
+            if ".jpg" not in fi:
                 continue
             fi_type = fi.rpartition('.')[2]
             initials = root.rpartition('/')[2].upper()
@@ -51,4 +51,4 @@ if __name__ == "__main__":
               .format(sys.argv[0]))
         sys.exit()
     sorter(sys.argv[1])
-    #sorter('/Users/aryehzapinsky/Documents/Programming/Photo\ Album\ Manipulation/TEST')
+    #sorter('/Users/aryehzapinsky/Documents/Programming/Photo_Album_Manipulation/TEST')
